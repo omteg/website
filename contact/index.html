@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Operations | OMTEG LTD</title>
   <meta name="description" content="Engage OMTEG LTD for mission-critical logistics, marine, procurement, and heavy engineering coordination in the global oil and gas sector.">
-  <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/logo/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/logo/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/omteg_logo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo/omteg_logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/omteg_logo.png">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="/">
-        <img src="/logo/favicon.png" alt="OMTEG logo">
+        <img src="/logo/omteg_logo.png" alt="OMTEG logo">
         <span>OMTEG LTD</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle menu">Menu ?</button>
@@ -29,7 +29,7 @@
     </div>
   </header>
 
-  <section class="hero" style="--hero-image: url('https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1600');">
+  <section class="hero" style="--hero-image: url('/assets/img/offshore-ops.jpg');">
     <div class="container">
       <h1>Initiate Operations.</h1>
       <p>Consult with our technical directors to architect your logistics, marine, procurement, or engineering execution strategy. Our command center is on standby.</p>
@@ -38,46 +38,46 @@
 
   <section class="section">
     <div class="container grid grid-2 reveal">
-      <div class="card" style="box-shadow: var(--shadow-md);">
-        <h2>Secure Comm-Line</h2>
-        <p style="margin-bottom: 2rem;">Transmission directed to OMTEG Corporate Command. Response times are strictly monitored.</p>
-        <form id="contact-form" action="https://formsubmit.co/info@omteg.com" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="contact-form">
+        <h2 style="margin-bottom: 0.5rem; border: none; padding: 0;">Secure Comm-Line</h2>
+        <p style="margin-bottom: 2rem; color: var(--ink-soft);">Transmission directed to OMTEG Corporate Command. Response times are strictly monitored.</p>
+        <form id="contact-form" action="https://formsubmit.co/info@omteg.com" method="post">
           <input type="hidden" name="_subject" value="OMTEG Strategic Inquiry">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://www.omteg.com/contact/?submitted=true">
           
-          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            <label for="name" style="font-weight: 600; font-size: 0.9rem;">Company / Organization Name</label>
-            <input id="name" name="name" required style="padding: 1rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface);">
+          <div class="form-group">
+            <label for="name">Company / Organization Name</label>
+            <input id="name" name="name" class="form-control" required>
           </div>
           
-          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            <label for="email" style="font-weight: 600; font-size: 0.9rem;">Corporate Email</label>
-            <input id="email" type="email" name="email" required style="padding: 1rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface);">
+          <div class="form-group">
+            <label for="email">Corporate Email</label>
+            <input id="email" type="email" name="email" class="form-control" required>
           </div>
           
-          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            <label for="message" style="font-weight: 600; font-size: 0.9rem;">Operational Requirements</label>
-            <textarea id="message" name="message" rows="5" required style="padding: 1rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); resize: vertical;"></textarea>
+          <div class="form-group">
+            <label for="message">Operational Requirements</label>
+            <textarea id="message" name="message" class="form-control" required></textarea>
           </div>
           
-          <button class="btn btn-primary" type="submit" style="margin-top: 1rem; align-self: flex-start;">Deploy Inquiry</button>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Request</button>
         </form>
       </div>
 
-      <div class="card" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div class="contact-info" style="display: flex; flex-direction: column; gap: 2rem;">
         <div>
-          <h2>Corporate Headquarters</h2>
-          <p style="line-height: 1.8;"><strong>OMTEG Logistics & Engineering Forward Base:</strong><br>
+          <h2 style="border:none; padding:0; color: white;">Corporate Headquarters</h2>
+          <p style="line-height: 1.8; color:rgba(255,255,255,0.85);"><strong>OMTEG Logistics & Engineering Base:</strong><br>
           1, Road 12 Estate Annex,<br>
           Rumuagholu Off SARS Road,<br>
           Port Harcourt, Rivers State.</p>
         </div>
         
         <div>
-          <p><strong><span class="icon-badge" style="display:inline-flex; width: 30px; height: 30px; font-size: 0.8rem; margin-right: 0.5rem;">&#x2709;</span> Secure Email:</strong> <a href="mailto:info@omteg.com" style="color: var(--brand-blue); text-decoration: none; font-weight: 600;">info@omteg.com</a></p>
-          <p><strong><span class="icon-badge" style="display:inline-flex; width: 30px; height: 30px; font-size: 0.8rem; margin-right: 0.5rem;">&#x260E;</span> Dispatch Desk:</strong> <a href="tel:+2348072096281" style="color: var(--brand-blue); text-decoration: none; font-weight: 600;">+234 807 209 6281</a></p>
+          <p><strong><span style="font-size: 1.2rem;">&#x2709;</span></strong> <a href="mailto:info@omteg.com" style="color: white; text-decoration: none; font-weight: 500;">info@omteg.com</a></p>
+          <p><strong><span style="font-size: 1.2rem;">&#x260E;</span></strong> <a href="tel:+2348072096281" style="color: white; text-decoration: none; font-weight: 500;">+234 807 209 6281</a></p>
         </div>
 
         <iframe title="OMTEG Strategic Base Location" src="https://maps.google.com/maps?q=Rumuagholu%20Off%20SARS%20Road%2C%20Port%20Harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius:var(--radius-sm); filter: grayscale(80%) sepia(30%) hue-rotate(180deg) brightness(80%) contrast(120%);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -85,35 +85,46 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
+    <footer class="site-footer">
+    <div class="container footer-grid reveal">
       <div>
-        <h4>OMTEG LTD</h4>
-        <p style="max-width: 300px">An elite corporate partner advancing the energy horizon through marine, logistics, and engineered perfection.</p>
+        <a class="footer-brand" href="/">
+          <img src="/logo/omteg_logo.png" alt="OMTEG logo">
+          OMTEG LTD
+        </a>
+        <p style="max-width: 320px; line-height: 1.8;">An elite corporate partner advancing the global energy horizon through world-class marine, logistics, and engineered perfection.</p>
       </div>
       <div>
-        <h4>Company Operations</h4>
+        <h4>Enterprise</h4>
         <ul class="footer-links">
-          <li><a href="/about/">About The Firm</a></li>
-          <li><a href="/services/">Core Services</a></li>
+          <li><a href="/about/">Corporate Strategy</a></li>
+          <li><a href="/services/">Core Capabilities</a></li>
           <li><a href="/hse/">HSE Framework</a></li>
-          <li><a href="/contact/">Contact Operations</a></li>
+          <li><a href="/capability-statement/">Capability Statement</a></li>
+          <li><a href="/contact/">Direct Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Compliance & Integrity</h4>
+        <h4>Key Services</h4>
         <ul class="footer-links">
-          <li>Corporate Affairs Commission</li>
-          <li>Federal Inland Revenue</li>
-          <li>Local Content Initiatives</li>
+          <li><a href="/services/marine-logistics.html">Marine Offshore</a></li>
+          <li><a href="/services/engineering.html">Tactical Engineering</a></li>
+          <li><a href="/services/procurement.html">Global Procurement</a></li>
+          <li><a href="/services/logistics.html">Freight Logistics</a></li>
         </ul>
       </div>
     </div>
-    <div class="container" style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 2rem; font-size: 0.85rem; opacity: 0.7;">
-      &copy; 2026 OMTEG LTD. All Rights Reserved.
+    <div class="container footer-bottom">
+      <p style="opacity: 0.5;">&copy; 2026 OMTEG LTD. Engineered for Global Energy Resilience.</p>
     </div>
   </footer>
 
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
