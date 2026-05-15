@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5 {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--hero-image, url("https://upload.wikimedia.org/wikipedia/commons/b/ba/LUN-A.jpg"));
+  background-image: var(--hero-image, url("https://images.pexels.com/photos/3356612/pexels-photo-3356612.jpeg?auto=compress&cs=tinysrgb&w=1600"));
   background-size: cover;
   background-position: center 30%;
   opacity: 0.35;
