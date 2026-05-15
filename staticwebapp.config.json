@@ -1,4 +1,65 @@
 {
+  "routes": [
+    {
+      "route": "/index.html",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/home",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/about",
+      "redirect": "/about/",
+      "statusCode": 301
+    },
+    {
+      "route": "/services",
+      "redirect": "/services/",
+      "statusCode": 301
+    },
+    {
+      "route": "/contact",
+      "redirect": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "route": "/hse",
+      "redirect": "/hse/",
+      "statusCode": 301
+    },
+    {
+      "route": "/capability-statement",
+      "redirect": "/capability-statement/",
+      "statusCode": 301
+    },
+    {
+      "route": "/services/logistics",
+      "rewrite": "/services/logistics.html"
+    },
+    {
+      "route": "/services/marine-logistics",
+      "rewrite": "/services/marine-logistics.html"
+    },
+    {
+      "route": "/services/procurement",
+      "rewrite": "/services/procurement.html"
+    },
+    {
+      "route": "/services/engineering",
+      "rewrite": "/services/engineering.html"
+    },
+    {
+      "route": "/services/project-management",
+      "rewrite": "/services/project-management.html"
+    },
+    {
+      "route": "/services/it-cybersecurity",
+      "rewrite": "/services/it-cybersecurity.html"
+    }
+  ],
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
