@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IT and cybersecurity icon">
+  <rect x="10" y="12" width="44" height="28" rx="4" fill="#0f4c81"/>
+  <rect x="26" y="42" width="12" height="4" fill="#145b95"/>
+  <path d="M20 24h24M20 30h14" stroke="#ffffff" stroke-width="2"/>
+  <path d="M48 34c0 8-8 14-16 18-8-4-16-10-16-18 0-1.2.2-2.3.5-3.4l15.5-5.6 15.5 5.6c.3 1.1.5 2.2.5 3.4z" fill="#f28c28" opacity="0.95"/>
+  <path d="M32 34v10" stroke="#fff" stroke-width="2"/>
+  <circle cx="32" cy="31" r="2" fill="#fff"/>
+</svg>
