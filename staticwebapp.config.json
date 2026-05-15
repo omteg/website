@@ -6,18 +6,11 @@
     "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
   },
   "mimeTypes": {
-    ".json": "text/json"
+    ".json": "application/json"
   },
-  "routes": [
-    {
-      "route": "/",
-      "serve": "/index.html",
-      "statusCode": 200
-    }
-  ],
   "responseOverrides": {
     "404": {
-      "rewrite": "/index.html",
+      "rewrite": "/404.html",
       "statusCode": 404
     }
   }

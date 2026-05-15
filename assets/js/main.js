@@ -3,8 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.querySelector(".nav-menu");
 
   if (navToggle && navMenu) {
+    navToggle.setAttribute("aria-expanded", "false");
     navToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
+      const isOpen = navMenu.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
 
@@ -24,10 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.querySelector("#contact-form");
   if (form) {
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-      alert("Thank you. Your message has been received and OMTEG will respond shortly.");
-      form.reset();
+    form.addEventListener("submit", () => {
+      const submitButton = form.querySelector('button[type="submit"]');
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+      }
     });
   }
 
