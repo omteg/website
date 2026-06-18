@@ -533,6 +533,26 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1.5rem;
 }
 
+.form-status {
+  margin-bottom: 1.2rem;
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.form-status.success {
+  background: #ECFDF3;
+  border: 1px solid #A7F3D0;
+  color: #065F46;
+}
+
+.form-status.error {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
+}
+
 .form-group label {
   display: block;
   font-weight: 600;
@@ -553,6 +573,64 @@ h1, h2, h3, h4, h5 {
   color: var(--ink);
 }
 
+select.form-control {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%), linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(50% - 3px), calc(100% - 14px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 3rem;
+}
+
+.form-note {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.file-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-alt);
+  color: var(--brand-deep);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.file-upload-btn:hover {
+  border-color: var(--brand-orange);
+  background: #FFF7ED;
+}
+
+.file-upload-name {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.form-file-help {
+  margin: 0.55rem 0 0;
+  color: var(--ink-lighter);
+  font-size: 0.84rem;
+}
+
+.form-note a {
+  color: var(--brand-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .form-control:focus {
   outline: none;
   border-color: var(--brand-orange);
@@ -563,6 +641,17 @@ h1, h2, h3, h4, h5 {
 textarea.form-control {
   min-height: 150px;
   resize: vertical;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .contact-info {

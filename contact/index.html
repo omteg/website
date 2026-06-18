@@ -31,36 +31,71 @@
 
   <section class="hero" style="--hero-image: url('/assets/img/offshore-ops.jpg');">
     <div class="container">
-      <h1>Initiate Operations.</h1>
-      <p>Consult with our technical directors to architect your logistics, marine, procurement, or engineering execution strategy. Our command center is on standby.</p>
+      <h1>Let's talk about your operation.</h1>
+      <p>Speak with our team about your logistics, marine, procurement, or engineering needs. Tell us your scope and timeline, and we'll respond promptly with the right people and resources.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container grid grid-2 reveal">
             <div class="contact-form">
-        <h2 style="margin-bottom: 0.5rem; border: none; padding: 0;">Secure Comm-Line</h2>
-        <p style="margin-bottom: 2rem; color: var(--ink-soft);">Transmission directed to OMTEG Corporate Command. Response times are strictly monitored.</p>
-        <form id="contact-form" action="https://formsubmit.co/info@omteg.com" method="post">
+        <h2 style="margin-bottom: 0.5rem; border: none; padding: 0;">Send us a message</h2>
+        <p style="margin-bottom: 2rem; color: var(--ink-soft);">Share a few details about your requirements and our team will get back to you quickly.</p>
+        <form id="contact-form" action="https://formsubmit.co/info@omteg.com" method="post" enctype="multipart/form-data" novalidate>
           <input type="hidden" name="_subject" value="OMTEG Strategic Inquiry">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://www.omteg.com/contact/?submitted=true">
+          <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting OMTEG LTD. Our operations desk has received your request and will respond shortly.">
+
+          <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
           
           <div class="form-group">
             <label for="name">Company / Organization Name</label>
-            <input id="name" name="name" class="form-control" required>
+            <input id="name" name="name" class="form-control" autocomplete="organization" placeholder="e.g., Delta Marine Services Ltd" minlength="2" maxlength="120" required>
           </div>
           
           <div class="form-group">
             <label for="email">Corporate Email</label>
-            <input id="email" type="email" name="email" class="form-control" required>
+            <input id="email" type="email" name="email" class="form-control" autocomplete="email" placeholder="ops@yourcompany.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp (Optional)</label>
+            <input id="phone" type="tel" name="phone" class="form-control" autocomplete="tel" placeholder="+234 800 000 0000" maxlength="30">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service" class="form-control" required>
+              <option value="" selected disabled>Select a service area</option>
+              <option value="Marine Logistics">Marine Logistics</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Procurement">Procurement</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Logistics">Logistics</option>
+              <option value="IT & Cybersecurity">IT & Cybersecurity</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
           
           <div class="form-group">
             <label for="message">Operational Requirements</label>
-            <textarea id="message" name="message" class="form-control" required></textarea>
+            <textarea id="message" name="message" class="form-control" placeholder="Provide project location, timeline, scope, and any HSE or compliance constraints." minlength="20" maxlength="2000" required></textarea>
           </div>
+
+          <div class="form-group">
+            <label for="attachment">Attach Scope Document (Optional)</label>
+            <div class="file-upload">
+              <input id="attachment" type="file" name="attachment" class="visually-hidden file-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg">
+              <label for="attachment" class="file-upload-btn">Attach File</label>
+              <span id="attachment-name" class="file-upload-name">No file selected</span>
+            </div>
+            <p class="form-file-help">Accepted: PDF, DOC, DOCX, XLS, XLSX, PNG, JPG. Max file size: 5MB.</p>
+          </div>
+
+          <p class="form-note">This secure line routes directly to <a href="mailto:info@omteg.com">info@omteg.com</a>.</p>
           
           <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Request</button>
         </form>

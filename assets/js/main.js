@@ -33,10 +33,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.querySelector("#contact-form");
   if (form) {
-    form.addEventListener("submit", () => {
+    const status = document.querySelector("#form-status");
+    const attachmentInput = document.querySelector("#attachment");
+    const attachmentName = document.querySelector("#attachment-name");
+    const hasSubmitted = new URLSearchParams(window.location.search).get("submitted") === "true";
+    const maxAttachmentBytes = 5 * 1024 * 1024;
+
+    if (status && hasSubmitted) {
+      status.hidden = false;
+      status.className = "form-status success";
+      status.textContent = "Request transmitted successfully. Our operations desk has received your message.";
+    }
+
+    if (attachmentInput && attachmentName) {
+      attachmentInput.addEventListener("change", () => {
+        const file = attachmentInput.files && attachmentInput.files[0];
+        attachmentName.textContent = file ? file.name : "No file selected";
+      });
+    }
+
+    form.addEventListener("submit", event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        form.reportValidity();
+        return;
+      }
+
+      const file = attachmentInput && attachmentInput.files ? attachmentInput.files[0] : null;
+      if (file && file.size > maxAttachmentBytes) {
+        event.preventDefault();
+        if (status) {
+          status.hidden = false;
+          status.className = "form-status error";
+          status.textContent = "Attachment is larger than 5MB. Please upload a smaller file.";
+        }
+        return;
+      }
+
       const submitButton = form.querySelector('button[type="submit"]');
       if (submitButton) {
         submitButton.disabled = true;
+        submitButton.setAttribute("aria-busy", "true");
         submitButton.textContent = "Submitting...";
       }
     });
