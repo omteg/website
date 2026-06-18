@@ -37,7 +37,7 @@
   </section>
 
   <section class="section">
-    <div class="container grid grid-2 reveal">
+    <div class="container grid grid-2 reveal" style="align-items: stretch;">
             <div class="contact-form">
         <h2 style="margin-bottom: 0.5rem; border: none; padding: 0;">Send us a message</h2>
         <p style="margin-bottom: 2rem; color: var(--ink-soft);">Share a few details about your requirements and our team will get back to you quickly.</p>
@@ -46,7 +46,7 @@
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://www.omteg.com/contact/?submitted=true">
-          <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">
           <input type="hidden" name="_autoresponse" value="Thank you for contacting OMTEG LTD. Our operations desk has received your request and will respond shortly.">
 
           <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
@@ -101,21 +101,21 @@
         </form>
       </div>
 
-            <div class="contact-info" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div class="contact-info" style="display: flex; flex-direction: column; gap: 1.75rem;">
         <div>
-          <h2 style="border:none; padding:0; color: white;">Corporate Headquarters</h2>
-          <p style="line-height: 1.8; color:rgba(255,255,255,0.85);"><strong>OMTEG Logistics & Engineering Base:</strong><br>
+          <h2 style="border:none; padding:0; color: white; margin-bottom: 1rem;">Corporate Headquarters</h2>
+          <p style="line-height: 1.8; color:rgba(255,255,255,0.85); margin:0;"><strong>OMTEG Logistics &amp; Engineering Base</strong><br>
           1, Road 12 Estate Annex,<br>
           Rumuagholu Off SARS Road,<br>
           Port Harcourt, Rivers State.</p>
         </div>
-        
-        <div>
-          <p><strong><span style="font-size: 1.2rem;">&#x2709;</span></strong> <a href="mailto:info@omteg.com" style="color: white; text-decoration: none; font-weight: 500;">info@omteg.com</a></p>
-          <p><strong><span style="font-size: 1.2rem;">&#x260E;</span></strong> <a href="tel:+2348072096281" style="color: white; text-decoration: none; font-weight: 500;">+234 807 209 6281</a></p>
+
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <p style="margin:0;"><span style="font-size: 1.15rem; margin-right:0.6rem;">&#x2709;</span> <a href="mailto:info@omteg.com" style="color: white; text-decoration: none; font-weight: 500;">info@omteg.com</a></p>
+          <p style="margin:0;"><span style="font-size: 1.15rem; margin-right:0.6rem;">&#x260E;</span> <a href="tel:+2348072096281" style="color: white; text-decoration: none; font-weight: 500;">+234 807 209 6281</a></p>
         </div>
 
-        <iframe title="OMTEG Strategic Base Location" src="https://maps.google.com/maps?q=Rumuagholu%20Off%20SARS%20Road%2C%20Port%20Harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius:var(--radius-sm); filter: grayscale(80%) sepia(30%) hue-rotate(180deg) brightness(80%) contrast(120%);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="OMTEG Strategic Base Location" src="https://maps.google.com/maps?q=Rumuagholu%20Off%20SARS%20Road%2C%20Port%20Harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius:var(--radius-sm); flex:1 1 auto; min-height:280px; filter: grayscale(80%) sepia(30%) hue-rotate(180deg) brightness(80%) contrast(120%);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
