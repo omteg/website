@@ -55,8 +55,8 @@ h1, h2, h3, h4, h5 {
   top: 0;
   z-index: 999;
   background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid rgba(229, 231, 235, 0.5);
   padding: 0.5rem 0;
   transition: all 0.3s ease;
@@ -164,6 +164,114 @@ h1, h2, h3, h4, h5 {
   background-position: center 35%;
 }
 
+.hero-offshore-ops { --hero-image: url('/assets/img/offshore-ops.jpg'); }
+.hero-offshore-dusk { --hero-image: url('/assets/img/offshore-dusk.jpg'); }
+.hero-crew-transfer { --hero-image: url('/assets/img/crew-transfer.jpg'); }
+.hero-osv-vessel { --hero-image: url('/assets/img/osv-vessel.jpg'); }
+
+.actions-center {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.section-heading-spaced {
+  margin-bottom: 3rem !important;
+}
+
+.mt-2rem {
+  margin-top: 2rem !important;
+}
+
+.mt-1-5rem {
+  margin-top: 1.5rem !important;
+}
+
+.center-max-900 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer-copy {
+  max-width: 320px;
+  line-height: 1.8;
+}
+
+.footer-muted {
+  opacity: 0.5;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.contact-form-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.panel-heading {
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.panel-copy {
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.contact-lede {
+  margin-bottom: 2rem;
+  color: var(--ink-soft);
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-method {
+  margin: 0;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.icon-inline {
+  font-size: 1.15rem;
+  margin-right: 0.6rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.hidden-honey {
+  display: none !important;
+}
+
+.map-frame {
+  border: 0;
+  border-radius: var(--radius-sm);
+  flex: 1 1 auto;
+  min-height: 280px;
+  filter: grayscale(80%) sepia(30%) hue-rotate(180deg) brightness(80%) contrast(120%);
+}
+
 .hero::after {
   content: '';
   position: absolute;
@@ -181,6 +289,17 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
   text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero-home {
+  padding-top: 8.5rem;
+  padding-bottom: 9rem;
+}
+
+.hero-home h1 {
+  font-size: clamp(2.3rem, 4.6vw, 4rem);
+  line-height: 1.06;
+  max-width: 760px;
 }
 
 .hero p {
@@ -227,8 +346,8 @@ h1, h2, h3, h4, h5 {
   background: rgba(255,255,255,0.05);
   color: white;
   border-color: rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Operations | OMTEG LTD</title>
-  <meta name="description" content="Engage OMTEG LTD for mission-critical logistics, marine, procurement, and heavy engineering coordination in the global oil and gas sector.">
+  <title>Contact | OMTEG LTD</title>
+  <meta name="description" content="Contact OMTEG LTD for offshore marine operations, vessel support, engineering coordination, project management, compliance, and AI-enabled logistics.">
   <link rel="icon" type="image/png" sizes="32x32" href="/logo/omteg-no-background2.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/logo/omteg-no-background2.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/logo/omteg-no-background2.png">
@@ -17,37 +17,37 @@
         <img src="/logo/omteg-no-background2.png" alt="OMTEG logo">
         <span>OMTEG LTD</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle menu">Menu ?</button>
+      <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
       <nav class="nav-menu" aria-label="Main navigation">
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/services/">Services</a>
-        <a href="/hse/">HSE</a>
+        <a href="/hse/">Compliance</a>
         <a href="/capability-statement/">Capability</a>
         <a href="/contact/" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" style="--hero-image: url('/assets/img/offshore-ops.jpg');">
+  <section class="hero hero-offshore-ops">
     <div class="container">
-      <h1>Let's talk about your operation.</h1>
-      <p>Speak with our team about your logistics, marine, procurement, or engineering needs. Tell us your scope and timeline, and we'll respond promptly with the right people and resources.</p>
+      <h1>Contact the Offshore Operations Desk.</h1>
+      <p>Share your marine scope, vessel requirement, project timeline, and compliance constraints. OMTEG will respond with the right operating model.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container grid grid-2 reveal" style="align-items: stretch;">
-            <div class="contact-form">
-        <h2 style="margin-bottom: 0.5rem; border: none; padding: 0;">Send us a message</h2>
-        <p style="margin-bottom: 2rem; color: var(--ink-soft);">Share a few details about your requirements and our team will get back to you quickly.</p>
+    <div class="container grid grid-2 reveal align-stretch">
+        <div class="contact-form contact-form-panel">
+      <h2 class="panel-heading">Send us a message</h2>
+        <p class="contact-lede">Send the vessel type, offshore location, scope, and schedule so we can assess the right support model.</p>
         <form id="contact-form" action="https://formsubmit.co/info@omteg.com" method="post" enctype="multipart/form-data" novalidate>
-          <input type="hidden" name="_subject" value="OMTEG Strategic Inquiry">
+          <input type="hidden" name="_subject" value="OMTEG Offshore Operations Inquiry">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://www.omteg.com/contact/?submitted=true">
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">
-          <input type="hidden" name="_autoresponse" value="Thank you for contacting OMTEG LTD. Our operations desk has received your request and will respond shortly.">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden-honey">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting OMTEG LTD. Our offshore operations desk has received your request and will respond shortly.">
 
           <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
           
@@ -70,19 +70,20 @@
             <label for="service">Service Required</label>
             <select id="service" name="service" class="form-control" required>
               <option value="" selected disabled>Select a service area</option>
-              <option value="Marine Logistics">Marine Logistics</option>
-              <option value="Engineering">Engineering</option>
-              <option value="Procurement">Procurement</option>
-              <option value="Project Management">Project Management</option>
-              <option value="Logistics">Logistics</option>
-              <option value="IT & Cybersecurity">IT & Cybersecurity</option>
+              <option value="Marine Operations">Marine Operations</option>
+              <option value="Vessel Capabilities">Vessel Capabilities</option>
+              <option value="Offshore Cargo & Resupply">Offshore Cargo & Resupply</option>
+              <option value="Engineering Support">Engineering Support</option>
+              <option value="Project Management Support">Project Management Support</option>
+              <option value="Compliance & Marine Assurance">Compliance & Marine Assurance</option>
+              <option value="AI-Enhanced Operations">AI-Enhanced Operations</option>
               <option value="Other">Other</option>
             </select>
           </div>
           
           <div class="form-group">
             <label for="message">Operational Requirements</label>
-            <textarea id="message" name="message" class="form-control" placeholder="Provide project location, timeline, scope, and any HSE or compliance constraints." minlength="20" maxlength="2000" required></textarea>
+            <textarea id="message" name="message" class="form-control" placeholder="Provide offshore location, vessel class, cargo profile, execution window, and any HSE or compliance constraints." minlength="20" maxlength="2000" required></textarea>
           </div>
 
           <div class="form-group">
@@ -97,25 +98,36 @@
 
           <p class="form-note">This secure line routes directly to <a href="mailto:info@omteg.com">info@omteg.com</a>.</p>
           
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Request</button>
+          <button type="submit" class="btn btn-primary btn-block">Transmit Request</button>
         </form>
       </div>
 
-            <div class="contact-info" style="display: flex; flex-direction: column; gap: 1.75rem;">
+            <div class="contact-info contact-panel">
         <div>
-          <h2 style="border:none; padding:0; color: white; margin-bottom: 1rem;">Corporate Headquarters</h2>
-          <p style="line-height: 1.8; color:rgba(255,255,255,0.85); margin:0;"><strong>OMTEG Logistics &amp; Engineering Base</strong><br>
+          <h2 class="panel-heading">Operations Base</h2>
+          <p class="panel-copy"><strong>OMTEG Offshore Operations Base</strong><br>
           1, Road 12 Estate Annex,<br>
           Rumuagholu Off SARS Road,<br>
-          Port Harcourt, Rivers State.</p>
+          Port Harcourt, Rivers State, Nigeria.</p>
+          <div class="contact-methods">
+            <p class="contact-method"><span class="icon-inline">&#x260E;</span> <a class="contact-link" href="tel:+2348072096281">+234 807 209 6281</a></p>
+          </div>
         </div>
 
-        <div style="display:flex; flex-direction:column; gap:0.75rem;">
-          <p style="margin:0;"><span style="font-size: 1.15rem; margin-right:0.6rem;">&#x2709;</span> <a href="mailto:info@omteg.com" style="color: white; text-decoration: none; font-weight: 500;">info@omteg.com</a></p>
-          <p style="margin:0;"><span style="font-size: 1.15rem; margin-right:0.6rem;">&#x260E;</span> <a href="tel:+2348072096281" style="color: white; text-decoration: none; font-weight: 500;">+234 807 209 6281</a></p>
+        <div>
+          <h2 class="panel-heading">United States Contact</h2>
+          <p class="panel-copy"><strong>OMTEG Houston Office</strong><br>
+          Houston, Texas, USA</p>
+          <div class="contact-methods">
+            <p class="contact-method"><span class="icon-inline">&#x2709;</span> <a class="contact-link" href="mailto:info@omteg.com">info@omteg.com</a></p>
+            <p class="contact-method"><span class="icon-inline">&#x260E;</span> <a class="contact-link" href="tel:+18324990816">+1 832 499 0816</a></p>
+          </div>
         </div>
 
-        <iframe title="OMTEG Strategic Base Location" src="https://maps.google.com/maps?q=Rumuagholu%20Off%20SARS%20Road%2C%20Port%20Harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius:var(--radius-sm); flex:1 1 auto; min-height:280px; filter: grayscale(80%) sepia(30%) hue-rotate(180deg) brightness(80%) contrast(120%);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-map-note">
+          <p class="panel-copy">Need directions or route planning for the Nigeria operations base? Open it in Google Maps.</p>
+          <a class="btn btn-secondary btn-block" href="https://www.google.com/maps?q=Rumuagholu%20Off%20SARS%20Road%2C%20Port%20Harcourt" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+        </div>
       </div>
     </div>
   </section>
@@ -127,14 +139,14 @@
           <img src="/logo/omteg-no-background2.png" alt="OMTEG logo">
           OMTEG LTD
         </a>
-        <p style="max-width: 320px; line-height: 1.8;">An elite corporate partner advancing the global energy horizon through world-class marine, logistics, and engineered perfection.</p>
+        <p class="footer-copy">Offshore marine and logistics services for the global offshore energy sector.</p>
       </div>
       <div>
         <h4>Enterprise</h4>
         <ul class="footer-links">
-          <li><a href="/about/">Corporate Strategy</a></li>
+          <li><a href="/about/">Company Profile</a></li>
           <li><a href="/services/">Core Capabilities</a></li>
-          <li><a href="/hse/">HSE Framework</a></li>
+          <li><a href="/hse/">Compliance</a></li>
           <li><a href="/capability-statement/">Capability Statement</a></li>
           <li><a href="/contact/">Direct Contact</a></li>
         </ul>
@@ -142,15 +154,15 @@
       <div>
         <h4>Key Services</h4>
         <ul class="footer-links">
-          <li><a href="/services/marine-logistics.html">Marine Offshore</a></li>
-          <li><a href="/services/engineering.html">Tactical Engineering</a></li>
-          <li><a href="/services/procurement.html">Global Procurement</a></li>
-          <li><a href="/services/logistics.html">Freight Logistics</a></li>
+          <li><a href="/services/marine-logistics.html">Marine Operations</a></li>
+          <li><a href="/services/vessel-capabilities.html">Vessel Capabilities</a></li>
+          <li><a href="/services/engineering.html">Engineering Support</a></li>
+          <li><a href="/services/project-management.html">Project Management</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p style="opacity: 0.5;">&copy; 2026 OMTEG LTD. Engineered for Global Energy Resilience.</p>
+      <p class="footer-muted">&copy; 2026 OMTEG LTD. Offshore marine and logistics services for the global offshore energy sector.</p>
     </div>
   </footer>
 
