@@ -781,9 +781,24 @@ textarea.form-control {
   box-shadow: var(--shadow-md);
 }
 
+.contact-info h2 {
+  color: white;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 1rem;
+}
+
+.contact-info h2::after {
+  background: rgba(255, 255, 255, 0.85);
+}
+
 .contact-info h3 {
   color: white;
   margin-bottom: 1.5rem;
+}
+
+.contact-info > div + div {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .contact-info p {
